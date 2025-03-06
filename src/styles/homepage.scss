@@ -1,0 +1,84 @@
+// Color Variables for Light Red and White Combo
+$primary-color: #b93b45;       // Light red color
+$secondary-color: #ffffff;      // White color
+$footer-background: #343a40;    // Dark gray for footer (nearly black)
+$footer-text-color: $secondary-color; // White text for the footer
+
+// Color Variables for Black and White Combo
+$black-color: #000000;        // Black color
+$white-color: #ffffff;        // White color
+
+// Footer Styles
+footer {
+  background-color: $footer-background; // Using dark gray (almost black)
+  color: $footer-text-color;   // White text
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;  // Push the footer down a bit
+
+  .footer-content {
+    padding: 10px;
+  }
+
+  // Optional: Add hover effect on links
+  a {
+    color: $footer-text-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Hero Section Styles (Light Red and White Combo)
+.hero-section {
+  background-color: $primary-color; // Light red background
+  padding: 50px 0;
+  color: $black-color;  // Black text color for contrast
+}
+
+// Features Section Styles (Light Red and White Combo)
+#features {
+  .feature-icon {
+    font-size: 40px;
+    color: $primary-color;  // Light red for icons
+  }
+}
+
+// Testimonials Section (Black and White Combo)
+.testimonials {
+  background-color: $black-color;  // Black background
+  color: $white-color;             // White text
+  padding: 40px 20px;
+  text-align: center;
+
+  p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+}
+
+// Links and Buttons (Using the Black and White Combo)
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+  color: $white-color;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}

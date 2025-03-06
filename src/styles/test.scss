@@ -1,0 +1,277 @@
+// Variables
+$primary-color: #fed136;
+$hover-color: #fec503;
+$dark-bg: #212529;
+$font-primary: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-secondary: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+body {
+  overflow-x: hidden;
+  font-family: $font-primary;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: $primary-color;
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+.text-primary {
+  color: $primary-color !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: $font-heading;
+}
+
+// Sections
+.page-section {
+  padding: 100px 0;
+  h2.section-heading {
+    font-size: 40px;
+    margin: 0 0 15px;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: $font-secondary;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+// Buttons
+.btn {
+  font-family: $font-heading;
+  font-weight: 700;
+  &-xl {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+  &-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    &:hover, &:focus, &:active {
+      background-color: $hover-color !important;
+      border-color: $hover-color !important;
+      color: #fff;
+    }
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+    }
+  }
+}
+
+// Navbar
+#mainNav {
+  background-color: $dark-bg;
+  .navbar-toggler {
+    font-size: 12px;
+    padding: 13px;
+    color: #fff;
+    background-color: $primary-color;
+    font-family: $font-heading;
+  }
+  .navbar-brand {
+    color: $primary-color;
+    font-family: 'Kaushan Script', $font-primary;
+    &:hover, &:focus, &:active {
+      color: $hover-color;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 90%;
+        font-weight: 400;
+        padding: 0.75em 0;
+        color: #fff;
+        font-family: $font-heading;
+        &:hover, &.active {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: padding 0.3s;
+    background-color: transparent;
+    .navbar-brand {
+      font-size: 1.75em;
+      transition: all 0.3s;
+    }
+    .navbar-nav .nav-item .nav-link {
+      padding: 1.1em 1em !important;
+    }
+  }
+}
+
+// Header
+header.masthead {
+  text-align: center;
+  color: #fff;
+//   background: url('../img/header-bg3.jpeg') center center/cover no-repeat;
+  background: url('../assets/img/header-bg3.jpeg') center center/cover no-repeat;
+
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    .intro-lead-in {
+      font-size: 22px;
+      font-style: italic;
+      margin-bottom: 25px;
+      font-family: $font-secondary;
+    }
+    .intro-heading {
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      font-family: $font-heading;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  header.masthead .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+    .intro-lead-in {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    .intro-heading {
+      font-size: 75px;
+      line-height: 75px;
+    }
+  }
+}
+
+// Portfolio
+#portfolio {
+  .portfolio-item {
+    margin: 0 0 15px;
+    .portfolio-link {
+      display: block;
+      max-width: 400px;
+      margin: 0 auto;
+      cursor: pointer;
+      .portfolio-hover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease;
+        opacity: 0;
+        background: rgba(254, 209, 54, 0.9);
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .portfolio-caption {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 25px;
+      text-align: center;
+      background-color: #fff;
+      h4 {
+        margin: 0;
+      }
+      p {
+        font-size: 16px;
+        font-style: italic;
+        font-family: $font-secondary;
+      }
+    }
+  }
+}
+
+// Timeline
+.timeline {
+  position: relative;
+  list-style: none;
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    content: '';
+    background-color: #e9ecef;
+  }
+  > li {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 50px;
+    .timeline-panel {
+      float: right;
+      width: 100%;
+      padding: 0 20px 0 100px;
+      text-align: left;
+    }
+  }
+}
+
+// Contact
+#contact {
+//   background: $dark-bg url('../img/map-image.png') center no-repeat;
+  background: $dark-bg url('../assets/img/map-image.png') center no-repeat;
+
+  .section-heading {
+    color: #fff;
+  }
+  .form-group {
+    margin-bottom: 25px;
+    input, textarea {
+      padding: 20px;
+    }
+  }
+}
+
+// Footer
+.footer {
+  padding: 25px 0;
+  text-align: center;
+  span.copyright, ul.quicklinks {
+    font-size: 90%;
+    line-height: 40px;
+    font-family: $font-heading;
+  }
+}
+
+// Social Buttons
+ul.social-buttons {
+  margin-bottom: 0;
+  li a {
+    font-size: 20px;
+    line-height: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s;
+    color: #fff;
+    border-radius: 100%;
+    background-color: $dark-bg;
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
