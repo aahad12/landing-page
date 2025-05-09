@@ -3,6 +3,21 @@ import React from 'react'
 
 export default ({ portfolioLinks }) => {
     return (
+      <>
+      <style>{`
+        .text-box {
+          color: #5846f9 !important;
+        }
+        .text-box:hover {
+          color: #5846f9 !important;
+        }
+        .text-back{
+        background-color: #5846f9 !important;
+        }
+        .text-back:hover{
+              background-color: #5846f9 !important;
+        }
+      `}</style>
         <section className="bg-light page-section" id="portfolio">
         <div className="container">
           <div className="row">
@@ -18,7 +33,7 @@ export default ({ portfolioLinks }) => {
                         <a className="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                             <div className="portfolio-hover">
                                 <div className="portfolio-hover-content">
-                                    <i className="fa fa-plus fa-3x"></i>
+                                    <i className="fa fa-plus fa-3x text-box"></i>
                                 </div>
                             </div>
                             <img className="img-fluid" src={ `https://unsplash.it/350/140/?${Math.floor(Math.random(0,100) * 100)}` } alt="portfolio_img" />
@@ -33,5 +48,6 @@ export default ({ portfolioLinks }) => {
           </div>
         </div>
       </section>
+      </>
     )
 }

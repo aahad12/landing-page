@@ -30,10 +30,10 @@
 import React, { useState } from 'react';
 // import logo from './logo.svg';
 import Portfolio from './components/Portfolio'
-// import './App.css';
+import './App.css';
 // import './styles/test.scss';  // Import your SCSS file
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import header from "../src/assets/img/header.jpeg"
 function App() {
   const portfolioLinks = [
     {
@@ -78,31 +78,51 @@ function App() {
   window.addEventListener('scroll', changeColor)
 
   return (
+    <>
+    <style>{`
+    .nav-text:hover{
+            color: #5846f9 !important;
+    }
+      .text-box {
+        color: #5846f9 !important;
+      }
+      .text-box:hover {
+        color: #5846f9 !important;
+      }
+      .text-back{
+      background-color: #5846f9 !important;
+      }
+      .text-back:hover{
+            background-color: #5846f9 !important;
+      }
+    `}</style>
     <div className="App">
       {/* <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav"> */}
       <nav className={color ? 'navbar navbar-expand-lg navbar-dark fixed-top bg-dark' : 'navbar navbar-expand-lg navbar-dark fixed-top'} id="mainNav">
     <div className="container">
-      <a className="navbar-brand js-scroll-trigger" href="#page-top">KClub Service</a>
+      <a className="navbar-brand js-scroll-trigger" href="#page-top">
+<img src={header} style={{width:150,}} />
+      </a>
       <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i className="fa fa-bars"></i>
       </button>
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav text-uppercase ml-auto">
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#services">Services</a>
+          <li className="nav-item" style={{}}>
+            <a className="nav-link nav-text js-scroll-trigger" href="#services">Services</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a className="nav-link nav-text js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#about">About</a>
+            <a className="nav-link nav-text js-scroll-trigger" href="#about">About</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#team">Team</a>
+            <a className="nav-link nav-text js-scroll-trigger" href="#team">Team</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a className="nav-link nav-text js-scroll-trigger" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -114,8 +134,8 @@ function App() {
     <div className="container">
       <div className="intro-text">
         <div className="intro-lead-in">Welcome To Our Studio!</div>
-        <div className="intro-heading text-uppercase">It's Nice To Meet You</div>
-        <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        <div className="">one-stop solution for all your financial needs. Our Fintech platform offers a wide range of loan and insurance products designed to meet your specific requirements.</div>
+        <a className="btn text-back btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
       </div>
     </div>
   </header>
@@ -135,7 +155,7 @@ Deployment of tech</h3>
       <div className="row text-center">
         <div className="col-md-4">
           <span className="fa-stack fa-4x">
-            <i className="fa fa-circle fa-stack-2x text-primary"></i>
+            <i className="fa fa-circle fa-stack-2x text-box"></i>
             <i className="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
           </span>
           <h4 className="service-heading">E-Commerce</h4>
@@ -143,7 +163,7 @@ Deployment of tech</h3>
         </div>
         <div className="col-md-4">
           <span className="fa-stack fa-4x">
-            <i className="fa fa-circle fa-stack-2x text-primary"></i>
+            <i className="fa fa-circle fa-stack-2x text-box"></i>
             <i className="fa fa-laptop fa-stack-1x fa-inverse"></i>
           </span>
           <h4 className="service-heading">Responsive Design</h4>
@@ -151,7 +171,7 @@ Deployment of tech</h3>
         </div>
         <div className="col-md-4">
           <span className="fa-stack fa-4x">
-            <i className="fa fa-circle fa-stack-2x text-primary"></i>
+            <i className="fa fa-circle fa-stack-2x text-box"></i>
             <i className="fa fa-lock fa-stack-1x fa-inverse"></i>
           </span>
           <h4 className="service-heading">Web Security</h4>
@@ -177,7 +197,7 @@ Deployment of tech</h3>
         <div className="col-lg-12">
           <ul className="timeline">
             <li>
-              <div className="timeline-image">
+              <div className="timeline-image text-back">
                 <img className="rounded-circle img-fluid" src="img/about/1.jpg" alt=""/>
               </div>
               <div className="timeline-panel">
@@ -191,7 +211,7 @@ Deployment of tech</h3>
               </div>
             </li>
             <li className="timeline-inverted">
-              <div className="timeline-image">
+              <div className="timeline-image text-back">
                 <img className="rounded-circle img-fluid" src="img/about/2.jpg" alt=""/>
               </div>
               <div className="timeline-panel">
@@ -205,7 +225,7 @@ Deployment of tech</h3>
               </div>
             </li>
             <li>
-              <div className="timeline-image">
+              <div className="timeline-image text-back">
                 <img className="rounded-circle img-fluid" src="img/about/3.jpg" alt=""/>
               </div>
               <div className="timeline-panel">
@@ -219,7 +239,7 @@ Deployment of tech</h3>
               </div>
             </li>
             <li className="timeline-inverted">
-              <div className="timeline-image">
+              <div className="timeline-image text-back">
                 <img className="rounded-circle img-fluid" src="img/about/4.jpg" alt=""/>
               </div>
               <div className="timeline-panel">
@@ -233,7 +253,7 @@ Deployment of tech</h3>
               </div>
             </li>
             <li className="timeline-inverted">
-              <div className="timeline-image">
+              <div className="timeline-image text-back">
                 <h4>Be Part
                   <br/>Of Our
                   <br/>Story!</h4>
@@ -262,17 +282,17 @@ Deployment of tech</h3>
             <p className="text-muted">Lead Designer</p>
             <ul className="list-inline social-buttons">
               <li className="list-inline-item">
-                <a href="#something">
+                <a href="#something" className='text-back'>
                   <i className="fa fa-twitter"></i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="#something">
+                <a href="#something" className='text-back'>
                   <i className="fa fa-facebook-f"></i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="#something">
+                <a href="#something" className='text-back'>
                   <i className="fa fa-linkedin"></i>
                 </a>
               </li>
@@ -286,17 +306,17 @@ Deployment of tech</h3>
             <p className="text-muted">Lead Marketer</p>
             <ul className="list-inline social-buttons">
               <li className="list-inline-item">
-                <a href="#something">
+                <a href="#something" className='text-back'>
                   <i className="fa fa-twitter"></i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="#something">
+                <a href="#something" className='text-back'>
                   <i className="fa fa-facebook-f"></i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="#something">
+                <a href="#something" className='text-back'>
                   <i className="fa fa-linkedin"></i>
                 </a>
               </li>
@@ -310,17 +330,17 @@ Deployment of tech</h3>
             <p className="text-muted">Lead Developer</p>
             <ul className="list-inline social-buttons">
               <li className="list-inline-item">
-                <a href="#something">
+                <a href="#something" className='text-back'>
                   <i className="fa fa-twitter"></i>
                 </a>
               </li>
-              <li className="list-inline-item">
-                <a href="#something">
+              <li className=" list-inline-item">
+                <a href="#something" className='text-back'>
                   <i className="fa fa-facebook-f"></i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="#something">
+                <a href="#something" className='text-back'>
                   <i className="fa fa-linkedin"></i>
                 </a>
               </li>
@@ -400,7 +420,7 @@ Deployment of tech</h3>
               <div className="clearfix"></div>
               <div className="col-lg-12 text-center">
                 <div id="success"></div>
-                <button id="sendMessageButton" className="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                <button id="sendMessageButton" className="text-back btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
               </div>
             </div>
           </form>
@@ -438,10 +458,10 @@ Deployment of tech</h3>
         <div className="col-md-4">
           <ul className="list-inline quicklinks">
             <li className="list-inline-item">
-              <a href="#something">Privacy Policy</a>
+              <a href="#something" className='text-box'>Privacy Policy</a>
             </li>
             <li className="list-inline-item">
-              <a href="#something">Terms of Use</a>
+              <a href="#something" className='text-box'>Terms of Use</a>
             </li>
           </ul>
         </div>
@@ -452,6 +472,7 @@ Deployment of tech</h3>
     </div> */}
   </footer>
     </div>
+    </>
   );
 }
 
