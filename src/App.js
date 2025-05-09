@@ -33,7 +33,7 @@ import Portfolio from './components/Portfolio'
 import './App.css';
 // import './styles/test.scss';  // Import your SCSS file
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "../src/assets/img/logo.jpeg"
+import logo from "./assets/img/logo.jpeg"
 function App() {
   const portfolioLinks = [
     {
@@ -102,7 +102,6 @@ function App() {
     <div className="container">
       <a className="navbar-brand js-scroll-trigger" href="#page-top">
 <img src={logo} style={{width:150}} />
-{/* <img src="/src/assets/img/header.jpeg" alt="Photo" /> */}
       </a>
       <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
