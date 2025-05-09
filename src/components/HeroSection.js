@@ -4,7 +4,7 @@ import heroImage from "../assets/hero.jpg"; // Adjust if your path differs
 
 const HeroSection = () => {
   return (
-    <div className="kclub-hero pt-5">
+    <div className="kclub-hero pt-3">
     <div className="kclub-flex">
       <div className="kclub-left">
           <span className="kclub-title">KCLUB</span>
