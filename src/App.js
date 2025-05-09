@@ -27,14 +27,27 @@
 // }
 
 // export default App;
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // import logo from './logo.svg';
 import Portfolio from './components/Portfolio'
 import './App.css';
 // import './styles/test.scss';  // Import your SCSS file
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./assets/img/logo.jpeg"
+import HeroSection from './components/HeroSection';
+import Loader from './components/Loader';
+
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  // Set a timeout to simulate loading time (5 seconds)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500); // 5000 ms = 5 seconds
+
+    return () => clearTimeout(timer); // Clean up the timeout if the component unmounts
+  }, []);
   const portfolioLinks = [
     {
       title: 'Domain: Education',
@@ -97,6 +110,10 @@ function App() {
       }
     `}</style>
     <div className="App">
+    {loading ? (
+        <Loader />
+      ) : (
+        <>
       {/* <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav"> */}
       <nav className={color ? 'navbar navbar-expand-lg navbar-dark fixed-top bg-white' : 'navbar navbar-expand-lg navbar-dark fixed-top bg-white'} id="mainNav">
     <div className="container">
@@ -109,7 +126,7 @@ function App() {
       </button>
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav text-uppercase ml-auto">
-          <li className="nav-item" style={{}}>
+          <li className="nav-item">
             <a className="nav-link nav-text js-scroll-trigger" href="#services">Services</a>
           </li>
           <li className="nav-item">
@@ -128,9 +145,12 @@ function App() {
       </div>
     </div>
   </nav>
+  <div className='pt-5'>
+<HeroSection />
 
+  </div>
   
-  <header className="masthead">
+  {/* <header className="masthead">
     <div className="container">
       <div className="intro-text">
         <div className="intro-lead-in">Welcome To Our Studio!</div>
@@ -138,7 +158,7 @@ function App() {
         <a className="btn text-back btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
       </div>
     </div>
-  </header>
+  </header> */}
 
   
   <section className="page-section" id="services">
@@ -471,6 +491,8 @@ Deployment of tech</h3>
       <h2 style={{backgroundColor:'red'}}> banner check</h2>
     </div> */}
   </footer>
+   </>
+   )}
     </div>
     </>
   );

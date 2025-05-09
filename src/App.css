@@ -41,3 +41,27 @@
 text-hover:hover{
   color: #5846f9 !important;
 }
+
+/* Loader CSS */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Light background */
+  z-index: 9999;
+}
+
+.loader img {
+  max-width: 200px; /* Adjust the size as needed */
+}
+
+.loader video {
+  max-width: 10%;
+  max-height: 10%;
+}
+
