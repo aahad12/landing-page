@@ -37,32 +37,32 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   const portfolioLinks = [
     {
-      title: 'Threads',
-      caption: 'Illustration'
+      title: 'Domain: Education',
+      caption: 'Cloud-based campus management system'
     },
     {
-      title: 'Explore',
-      caption: 'Graphic Design'
+      title: 'Domain: Fintech',
+      caption: 'Global crypto wallet & payments solution'
     },
     {
-      title: 'Finish',
-      caption: 'Identity'
+      title: 'Domain: Health Care',
+      caption: 'Health management System'
     },
     {
-      title: 'Lines',
-      caption: 'Branding'
+      title: 'Domain: Retail Tech',
+      caption: 'Omni-channel retail platform'
     },
     {
-      title: 'Southwest',
-      caption: 'Website Design'
+      title: 'Domain: AI Chatbot',
+      caption: 'Easy no-code AI chatbot'
     },
     {
-      title: 'Window',
-      caption: 'Photography'
+      title: 'Domain: Cybersecurity',
+      caption: 'Tailored cyber-security solutions'
     },
     {
-      title: 'Pizza',
-      caption: 'I love pizza!'
+      title: 'Domain: Fintech',
+      caption: 'Global crypto wallet & payments solution'
     }
   ]
 
@@ -82,7 +82,7 @@ function App() {
       {/* <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav"> */}
       <nav className={color ? 'navbar navbar-expand-lg navbar-dark fixed-top bg-dark' : 'navbar navbar-expand-lg navbar-dark fixed-top'} id="mainNav">
     <div className="container">
-      <a className="navbar-brand js-scroll-trigger" href="#page-top">Start Service</a>
+      <a className="navbar-brand js-scroll-trigger" href="#page-top">KClub Service</a>
       <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i className="fa fa-bars"></i>
@@ -125,8 +125,11 @@ function App() {
     <div className="container">
       <div className="row">
         <div className="col-lg-12 text-center">
-          <h2 className="section-heading text-uppercase">Services</h2>
-          <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 className="section-heading text-uppercase">Our Services</h2>
+          <h3 className="section-subheading text-muted">Industry experts with years of
+experience End to End support in
+Design, Development and
+Deployment of tech</h3>
         </div>
       </div>
       <div className="row text-center">
