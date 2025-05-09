@@ -33,7 +33,7 @@ import Portfolio from './components/Portfolio'
 import './App.css';
 // import './styles/test.scss';  // Import your SCSS file
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "../src/assets/img/header.jpeg"
+import logo from "../src/assets/img/logo.jpeg"
 function App() {
   const portfolioLinks = [
     {
