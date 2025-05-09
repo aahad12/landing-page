@@ -297,7 +297,7 @@ Deployment of tech</h3>
       <div className="row">
         <div className="col-sm-4">
           <div className="team-member">
-            <img className="mx-auto rounded-circle" src="img/team/1.jpg" alt=""/>
+            <img className="mx-auto rounded-circle" src="https://images.unsplash.com/photo-1688888745596-da40843a8d45?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D" alt=""/>
             <h4>Kay Garland</h4>
             <p className="text-muted">Lead Designer</p>
             <ul className="list-inline social-buttons">
@@ -321,7 +321,7 @@ Deployment of tech</h3>
         </div>
         <div className="col-sm-4">
           <div className="team-member">
-            <img className="mx-auto rounded-circle" src="img/team/2.jpg" alt=""/>
+            <img className="mx-auto rounded-circle" src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fHww" alt=""/>
             <h4>Larry Parker</h4>
             <p className="text-muted">Lead Marketer</p>
             <ul className="list-inline social-buttons">
@@ -345,7 +345,7 @@ Deployment of tech</h3>
         </div>
         <div className="col-sm-4">
           <div className="team-member">
-            <img className="mx-auto rounded-circle" src="img/team/3.jpg" alt=""/>
+            <img className="mx-auto rounded-circle" src="https://images.unsplash.com/photo-1604072366595-e75dc92d6bdc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D" alt=""/>
             <h4>Diana Pertersen</h4>
             <p className="text-muted">Lead Developer</p>
             <ul className="list-inline social-buttons">
