@@ -36,6 +36,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./assets/img/logo.jpeg"
 import HeroSection from './components/HeroSection';
 import Loader from './components/Loader';
+import ExpertiseSection from './components/ExpertiseSec';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -108,6 +109,9 @@ function App() {
       .text-back:hover{
             background-color: #5846f9 !important;
       }
+            .back-grey{
+            background-color:#f7f7f7 !important;
+            }
     `}</style>
     <div className="App">
     {loading ? (
@@ -115,7 +119,7 @@ function App() {
       ) : (
         <>
       {/* <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav"> */}
-      <nav className={color ? 'navbar navbar-expand-lg navbar-dark fixed-top bg-white' : 'navbar navbar-expand-lg navbar-dark fixed-top bg-white'} id="mainNav">
+      <nav className={color ? 'navbar navbar-expand-lg  fixed-top back-grey' : 'navbar navbar-expand-lg  fixed-top back-grey'} id="mainNav">
     <div className="container">
       <a className="navbar-brand js-scroll-trigger" href="#page-top">
 <img src={logo} style={{width:150}} />
@@ -178,24 +182,52 @@ Deployment of tech</h3>
             <i className="fa fa-circle fa-stack-2x text-box"></i>
             <i className="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 className="service-heading">E-Commerce</h4>
-          <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          <h4 className="service-heading">Enterprise Solution</h4>
+          <p className="text-muted">From robust ERP systems to intricate CRM platforms, we meticulously design and deploy enterprise-grade solutions that fuel growth, enhance efficiency, and drive innovation.</p>
         </div>
         <div className="col-md-4">
           <span className="fa-stack fa-4x">
             <i className="fa fa-circle fa-stack-2x text-box"></i>
             <i className="fa fa-laptop fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 className="service-heading">Responsive Design</h4>
-          <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          <h4 className="service-heading">Retail & eCommerce</h4>
+          <p className="text-muted">From cutting-edge e-commerce platforms to innovative retail tech solutions, we pave the way for your business to thrive in the digital marketplace.</p>
         </div>
         <div className="col-md-4">
           <span className="fa-stack fa-4x">
             <i className="fa fa-circle fa-stack-2x text-box"></i>
             <i className="fa fa-lock fa-stack-1x fa-inverse"></i>
           </span>
-          <h4 className="service-heading">Web Security</h4>
-          <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+          <h4 className="service-heading">Emerging Test</h4>
+          <p className="text-muted">we lead the charge in harness the power of emerg technologies to drive innovat and elevate your business new heights.
+          </p>
+        </div>
+        <div className="col-md-4">
+          <span className="fa-stack fa-4x">
+            <i className="fa fa-circle fa-stack-2x text-box"></i>
+            <i className="fa fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 className="service-heading">Resource Augmentation</h4>
+          <p className="text-muted">Our dynamic IT professionals become an extension of your team, ensuring accelerated project delivery and unmatched expertise.
+          Penetration Testing</p>
+        </div>
+        <div className="col-md-4">
+          <span className="fa-stack fa-4x">
+            <i className="fa fa-circle fa-stack-2x text-box"></i>
+            <i className="fa fa-lock fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 className="service-heading">Penetration Testing</h4>
+          <p className="text-muted">Our penetration testing services help organizations identify vulnerabilities in their systems and infrastructure before they be exploited by cybercriminals.
+          </p>
+        </div>
+        <div className="col-md-4">
+          <span className="fa-stack fa-4x">
+            <i className="fa fa-circle fa-stack-2x text-box"></i>
+            <i className="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 className="service-heading">AI Powered Marketing</h4>
+          <p className="text-muted">From strategic campaigns compelling content, we craft tailored marketing journey t propels your tech solutions i the spotlight.
+          </p>
         </div>
       </div>
     </div>
@@ -203,7 +235,7 @@ Deployment of tech</h3>
 
   
   <Portfolio portfolioLinks={portfolioLinks}></Portfolio>
-
+<ExpertiseSection />
   
   <section className="page-section" id="about">
     <div className="container">
